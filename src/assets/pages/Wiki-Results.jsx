@@ -86,6 +86,7 @@ function WikiResults() {
                 >
                   {result.title}
                 </a>
+                <hr />
                 <p
                   style={{
                     height: expanded[result.pageid] ? '100%' : '20vh',

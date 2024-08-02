@@ -1,6 +1,14 @@
+body{
+  background-color: #F9F9F9!important;
+}
+
 nav{
   height: 8vh;
   background-color: #1E3A8A;
+  font-family: 'poppins';
+}
+nav .navbar-brand{
+  font-weight: bold;
 }
 main{
   min-height: 92vh;
@@ -18,4 +26,9 @@ main{
 }
 .headerCont{
   background: linear-gradient(135deg ,#1E3A8A, #1E3A8A, #4495c4);
+}
+.wikiSearchH1{
+  font-size: 5rem;
+  font-family: 'poppins';
+  font-weight: bold;
 }
