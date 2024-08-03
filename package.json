@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.5.0",
     "axios": "^1.7.3",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
@@ -19,10 +21,14 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.11.0",
+    "particle.js": "^1.0.7",
+    "particles.js": "^2.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.26.0"
+    "react-router-dom": "^6.26.0",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^3.5.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

@@ -42,32 +42,34 @@ function RegisterComponent() {
 
   return (
     <div className="container d-flex justify-content-center mt-4">
-      <form className='card p-lg-5' style={{width: '50%'}} onSubmit={handleSubmit}>
+      <form className='card p-lg-5 d-flex justify-content-evenly form' onSubmit={handleSubmit}>
         <h2 className='text-center mb-5'>Register</h2>
 
-        <div className="mb-3">
-          <label htmlFor="firstName" className="form-label">First Name</label>
-          <input
-            type="text"
-            className="form-control"
-            id="firstName"
-            name="firstName"
-            value={formData.firstName}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="lastName" className="form-label">Last Name</label>
-          <input
-            type="text"
-            className="form-control"
-            id="lastName"
-            name="lastName"
-            value={formData.lastName}
-            onChange={handleChange}
-            required
-          />
+        <div className="d-flex justify-content-between mb-3">
+          <div className="w-49">
+            <label htmlFor="firstName" className="form-label">First Name</label>
+            <input
+              type="text"
+              className="form-control"
+              id="firstName"
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="w-49">
+            <label htmlFor="lastName" className="form-label">Last Name</label>
+            <input
+              type="text"
+              className="form-control"
+              id="lastName"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+            />
+          </div>
         </div>
         <div className="mb-3">
           <label htmlFor="email" className="form-label">Email address</label>
@@ -109,8 +111,8 @@ function RegisterComponent() {
         <small className='text-center mb-3'>Already have an account? <a href="Login">Login</a></small>
 
         <button type="submit" className="btn btn-primary">Register</button>
-        {error && <div className="alert alert-danger">{error}</div>}
-        {success && <div className="alert alert-success">{success}</div>}
+        {error && <div className="alert alert-danger mt-3">{error}</div>}
+        {success && <div className="alert alert-success mt-3">{success}</div>}
       </form>
     </div>
   );

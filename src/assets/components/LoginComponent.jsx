@@ -34,7 +34,7 @@ function LoginComponent() {
 
   return (
     <div className="container mt-4 d-flex justify-content-center">
-      <form className='card p-lg-5 p-2' style={{width: '40%',maxWidth: '100%'}} onSubmit={handleSubmit}>
+      <form className='card p-lg-5 p-2 form justify-content-evenly' onSubmit={handleSubmit}>
         <h2 className='text-center mb-5'>Login</h2>
         <div className="mb-3">
           <label htmlFor="email" className="form-label">Email address</label>
@@ -62,7 +62,7 @@ function LoginComponent() {
         </div>
         <small className='text-center mb-3'>Don't have an account? <a href="/register">Register</a></small>
         <button type="submit" className="btn btn-primary">Login</button>
-        {error && <div className="alert alert-danger">{error}</div>}
+        {error && <div className="alert alert-danger mt-3">{error}</div>}
       </form>
     </div>
   );

@@ -1,9 +1,11 @@
 import WikiSearch from "./WikiSearch";
 import Logo from '../images/logo.webp'
+import ParticlesComponent from './Particles'
 
 function Header(){
     return(
         <>
+            <ParticlesComponent id='particles' />
             <main className="headerCont d-flex flex-column justify-content-center">
                 <div className="container">
                     <div className="row">
@@ -24,6 +26,7 @@ function Header(){
                     </div>
                 </div>
             </main>
+
         </>
     );  
 }
