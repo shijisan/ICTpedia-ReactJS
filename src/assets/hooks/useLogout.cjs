@@ -7,6 +7,8 @@ const useLogout = () => {
   const logout = () => {
     // Remove token from localStorage
     localStorage.removeItem('token');
+    localStorage.removeItem('adminToken');
+
 
     // Redirect to login or any other desired page
     navigate('/login');

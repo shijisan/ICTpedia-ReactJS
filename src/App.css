@@ -26,10 +26,16 @@ main{
   color: white;
 }
 
+.wikiSearchCont{
+  background-color: rgb(255, 255, 255, .1)!important;
+  backdrop-filter: blur(5px);
+}
+
 .wikiSearchH1{
   font-size: 5rem;
   font-family: 'poppins';
   font-weight: bold;
+  color:deepskyblue;
 }
 
 #particles{
